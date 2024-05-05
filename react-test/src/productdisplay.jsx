@@ -19,14 +19,14 @@ export const Productdisplay = () => {
       console.log(y.data);
       setdata(y.data);
     });
-  });
+  },[]);
 
   return (
     <div>
       {data.map((value, index) => {
         return (
-          <>
-            <Card  sx={{ maxWidth: 345 }}>
+          <div key={index}>
+            <Card  sx={{ maxWidth: 345 }} >
               <CardMedia
                 component="img"
                 alt="green iguana"
@@ -41,7 +41,7 @@ export const Productdisplay = () => {
                   {value.price}
                 </Typography>
                 <Typography gutterBottom variant="h5" component="div">
-                  {data.value.category}
+                  {value.category}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   {value.description}
@@ -49,7 +49,7 @@ export const Productdisplay = () => {
               </CardContent>
              
             </Card>
-          </>
+          </div>
         );
       })}
     </div>

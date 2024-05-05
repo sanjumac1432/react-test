@@ -47,7 +47,7 @@ export const Fromvalidation = () => {
           id="lastname"
           name="lastname"
           label="lastname"
-          type="number"
+          type="text"
           value={formik.values.lastname}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}

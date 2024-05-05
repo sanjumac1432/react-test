@@ -8,10 +8,10 @@ import { Fromvalidation } from "./fromvalidation";
 export const Displaydata = () => {
   return (
     <Routes>
-      <Route>
+      {/* <Route> */}
         <Route path="/display" element={<Productdisplay></Productdisplay>} />
-        <Route path="/" element={<Fromvalidation> </Fromvalidation>} />
-      </Route>
+        <Route path="/contact" element={<Fromvalidation> </Fromvalidation>} />
+      {/* </Route> */}
     </Routes>
   );
 };

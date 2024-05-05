@@ -5,7 +5,6 @@ import "./index.css";
 import { Fromvalidation } from "./fromvalidation.jsx";
 import { Displaydata } from "./axiosdata.jsx";
 import { BrowserRouter } from "react-router-dom";
-// import  Fromvalidation  from './fromvalidation.jsx'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
