@@ -12,7 +12,7 @@ export const Employeedisplay = (props) => {
   const [id, setid] = useState(0);
 
  const Deleteinfo = (id)=>{
-  fetch("https://6637086d288fedf6937f3dd8.mockapi.io/employee/employee" + id,{
+  fetch("https://6637086d288fedf6937f3dd8.mockapi.io/employee/employee/" + id,{
     method:"Delete"
   }).then(y=>{
     return y.json();
